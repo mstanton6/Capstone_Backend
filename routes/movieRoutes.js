@@ -40,4 +40,21 @@ router.post("/", async (req, res) => {
 
 })
 
+// Edit (Patch) a movie
+router.patch("/:id", async (req, res) => {
+
+    // Perform Action 
+    let updmovie = await collection.updateOne(
+        { "_id": new ObjectId(req.params.id)}, 
+        { $set: {  "title": req.body.title,
+          "year": req.body.year,
+          "rating": req.body.rating,
+          "genre": req.body.genre
+        }}
+    )
+    // Return results
+    res.json(updmovie);
+
+})
+
 export default router;
