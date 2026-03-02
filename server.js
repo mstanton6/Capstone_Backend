@@ -1,7 +1,7 @@
 // Imports
 import express from "express";
 import { logReq, globalErr } from "./middleware/middleware.js";
-//import seedRoutes from "./routes/seedRoutes.js";
+import seedRoutes from "./routes/seedRoutes.js";
 import movieRoutes from "./routes/movieRoutes.js";
 import dotenv from "dotenv";
 import cors from "cors";
@@ -17,7 +17,7 @@ app.use(logReq);
 app.use(cors());
 
 // Routes
-// app.use("/api/seed", seedRoutes);
+app.use("/api/seed", seedRoutes);
 app.use("/api/movies", movieRoutes);
 
 

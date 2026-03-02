@@ -57,4 +57,16 @@ router.patch("/:id", async (req, res) => {
 
 })
 
+// Delete for a movie
+router.delete("/:id", async (req, res) => {
+    
+    // Perform Action 
+    let delmovie = await collection.deleteOne(
+        { "_id": new ObjectId(req.params.id)} 
+    )
+    // Return results
+    res.json(delmovie);
+
+})
+
 export default router;

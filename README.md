@@ -11,11 +11,13 @@ See the prerequisites below.
 # Example usage
 1. This is how to use the movie route
 
-a. Get all movies:   api/movies
+Seed Route:             api/seed
 
-b. Get one movie:    api/movies/:id
+a. Get all movies:      api/movies          GET
 
-c. Add a movie        api/movies
+b. Get one movie:       api/movies/:id      GET
+
+c. Add a movie          api/movies          POST
 {
   "title": "Back to the Future",
   "genre": "Science Fiction / Adventure / Comedy",
@@ -23,9 +25,9 @@ c. Add a movie        api/movies
   "rating": "PG"
 }
 
-d. Edit (Patch) a movie api/movies/:id
+d. Edit (Patch) a movie api/movies/:id      PATCH
 
-e. Delete a movie       api/movies/:id
+e. Delete a movie       api/movies/:id      DELETE
 
 
 # Technologies Used:
