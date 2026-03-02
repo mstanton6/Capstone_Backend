@@ -29,4 +29,15 @@ router.get("/:id",async (req,res) =>  {
 
 })
 
+// Add a movie
+router.post("/", async (req, res) => {
+
+    // Perform Action 
+    let newmovie  = await collection.insertOne(req.body);
+
+    // Return results
+    res.json(newmovie);
+
+})
+
 export default router;
