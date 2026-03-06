@@ -11,7 +11,7 @@ const collection = db.collection("movies");
 router.get("/",async (req,res) =>  {
 
     // Perform Action 
-    let getall = await collection.find({}).sort("name", 1).toArray();
+    let getall = await collection.find({}).sort({watched:-1, title: 1}).toArray();
 
     // Return results
     res.json(getall)
@@ -49,7 +49,8 @@ router.patch("/:id", async (req, res) => {
         { $set: {  "title": req.body.title,
           "year": req.body.year,
           "rating": req.body.rating,
-          "genre": req.body.genre
+          "genre": req.body.genre,
+          "watched": req.body.watched
         }}
     )
     // Return results
