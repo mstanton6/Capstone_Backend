@@ -78,6 +78,8 @@ To use this project locally:
 
     npm i express mongodb dotenv
 
+    npm install express-rate-limit
+
 4. Run "npm run dev"
 
 5.  Open a browser or Postman and go to localhost:3001
