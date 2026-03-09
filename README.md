@@ -10,6 +10,7 @@ Overall Description: This site is dedicated to movies and movie lovers. It helps
 How to Start
 ============
 You start the server by "npm run dev"
+You have to have the mongodb connection string: MONGO_URI
 
 See the prerequisites below.
 
@@ -56,7 +57,7 @@ REST API                – Uses standard HTTP methods (GET, POST, PATCH, DELETE
 # Prerequisites
 
    1. node.js
-   2. MongoDB  – The database is already hosted in the cloud. Use the connection string in the .env file.
+   2. MongoDB  – The database is already hosted in the cloud. Use the connection string in the .env file - MONGO_URI
 
 # Installation and Usage
 
