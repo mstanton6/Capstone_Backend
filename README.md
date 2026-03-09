@@ -1,5 +1,11 @@
 # My Application Name and description
- This is a MongoDB Database Application. It supports 2 routes (movies and seed). It follows the CRUD model for create, read, update, and delete. The seed route seeds movies and creates indexes for the movie route.
+Overall Description: This site is dedicated to movies and movie lovers. It helps you keep track of the films you’ve already watched and the ones you want to watch in the future. From the main page, you can easily add new movies, edit existing movies, or remove movies from your list. The goal of this site is to provide a simple and convenient way to organize your personal movie collection and watchlist.
+
+ This backend is a MongoDB Database Application. It supports 2 routes (movies and seed). It follows the CRUD model for create, read, update, and delete. The seed route seeds movies and creates indexes for the movie route.
+
+ Linking my backend and frontend repositories here:
+ https://github.com/mstanton6/Capstone_Frontend.git - this project
+ https://github.com/mstanton6/Capstone_Backend.git  - reference to my backend project
 
 How to Start
 ============
@@ -50,7 +56,7 @@ REST API                – Uses standard HTTP methods (GET, POST, PATCH, DELETE
 # Prerequisites
 
    1. node.js
-   2. MongoDB Atlas connection – The database is already hosted in the cloud. Use the connection string in the .env file.
+   2. MongoDB  – The database is already hosted in the cloud. Use the connection string in the .env file.
 
 # Installation and Usage
 
@@ -67,6 +73,8 @@ To use this project locally:
 3.  ** Run dependencies 
 
     npm install
+
+    npm i cors
 
     npm i express mongodb dotenv
 
