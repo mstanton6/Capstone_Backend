@@ -21,7 +21,7 @@ const limiter = rateLimit({
 // Middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://capstone-frontend-aei1.onrender.com", "http://localhost:5173"],
     credentials: true, // Allow the req.header AND req.body through. w/o would only allow the req.body
   }),
 ); // Allows sharing resources to all Servers
